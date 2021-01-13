@@ -1,0 +1,6 @@
+pip install Chefboost
+from chefboost import Chefboost as chef
+import pandas as pd
+df = pd.read_csv("ep_f.csv")
+config = {'algorithm': 'C4.5'}
+model = chef.fit(df.copy(), config)
